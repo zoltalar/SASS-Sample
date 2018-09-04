@@ -1,5 +1,5 @@
 # Sample SASS Code
-SASS code from one of the recent BuddyPress project. Theme's main styles are organized based on Bootstrap 3 breakpoints (mobile first):
+SASS code from one of the recent BuddyPress projects. Theme's main styles are organized based on Bootstrap 3 breakpoints (mobile first):
 
 * `theme.scss` contains default styles and media queries for non-standard Bootstrap 3 breakpoints (marked as exceptions),
 * `theme-xs.scss` contains styles for devices larger than 480px,
