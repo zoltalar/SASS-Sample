@@ -1,0 +1,111 @@
+.ac-form {
+  display: none;
+  padding: $grid-gutter-width 0 0 60px;
+}
+
+.acomment-meta {
+
+  a {
+
+    &:first-of-type {
+      font-size: 14px;
+    }
+  }
+}
+
+.acomment-options {
+  @extend .comment-buttons;
+}
+
+.activity-comments {
+
+  > ul {
+
+    > li {
+
+      // .depth-2 fix
+      &:first-of-type {
+        border-top: none;
+        padding-top: 5px;
+      }
+    }
+  }
+
+  // Ajax comment reply
+  ul:not(.children):not(.dropdown-menu) {
+    @include list-unstyled;
+    margin-bottom: -20px;
+    margin-top: 10px;
+    padding-top: ($grid-gutter-width / 2);
+  }
+
+  .ac-form {
+    padding-left: 50px;
+  }
+}
+
+.activity-content {
+
+  .post-title {
+    padding-left: 0;
+  }
+}
+
+.activity-excerpt {
+  @extend .comment-entry;
+}
+
+.activity-header.meta {
+  margin-bottom: 0;
+
+  a {
+
+    &:first-of-type {
+      font-size: 14px;
+    }
+  }
+}
+
+.activity-header {
+
+  img {
+    display: none;
+  }
+}
+
+.activity-inner {
+  @extend .comment-entry;
+}
+
+.activity-item {
+  @extend .comment;
+}
+
+.activity-list {
+  @include list-unstyled;
+
+  > .activity-item {
+
+    &:first-child {
+      border-top: solid 1px $brand-info;
+    }
+  }
+}
+
+.activity-meta {
+  @extend .comment-buttons;
+}
+
+.activity-thumbnail {
+  margin: 10px 0 ($grid-gutter-width / 2);
+
+  a {
+    border: solid 2px #ddd;
+    display: block;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}

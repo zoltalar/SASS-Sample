@@ -1,0 +1,175 @@
+.navbar-fixed {
+  background-color: #222;
+  border-width: 0;
+  color: rgba(255,255,255,0.65);
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  margin-bottom: 0;
+  min-height: 32px;
+  min-width: 320px;
+  @include box-shadow(0 1px 2px rgba(0, 0, 0, .3));
+
+  a:not(.btn) {
+    color: $navbar-fixed-link-color;
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+
+    &:visited {
+      color: $navbar-fixed-link-color;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+
+    a:not(.btn) {
+      color: $text-color;
+
+      &:hover,
+      &:focus {
+        color: $text-color;
+      }
+    }
+  }
+
+  .link-list {
+    margin: 0;
+    padding: 0;
+
+    > li {
+      display: inline-block;
+
+      & + li {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  // Exception
+  @media (max-width: 600px) {
+
+    .col-admin {
+      display: none;
+    }
+
+    .col-user {
+      width: 100%;
+    }
+  }
+}
+
+.navbar-primary {
+  border-bottom: solid 1px #ddd;
+  border-top: none;
+  margin-bottom: 0;
+  @include linear-gradient(top, #278ea2, #00778f);
+
+  .navbar-brand {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    height: 85px;
+    margin-left: 0 !important;
+    max-width: 250px;
+    padding: 0;
+    width: calc(100% - 85px);
+  }
+
+  .navbar-header {
+    min-height: 85px;
+    position: relative;
+  }
+
+  .navbar-nav {
+    font-family: $font-droid-sans, $font-trebuchet-ms, sans-serif;
+
+    a {
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+
+  .navbar-toggle {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 0;
+    bottom: 0;
+    color: $white;
+    margin: 0;
+    padding: 10px 8px;
+    position: absolute;
+    right: 0;
+
+    .glyphicon-option-vertical {
+      display: none;
+    }
+
+    &.collapsed {
+
+      .glyphicon-option-vertical {
+        display: inline-block;
+      }
+
+      .glyphicon-remove {
+        display: none;
+      }
+    }
+  }
+
+  // Exception
+  @media (max-width: $screen-xs-max) {
+
+    .navbar-collapse {
+
+      &.collapsing {
+        @include transition-duration(0.1s);
+        @include transition-property(height, visibility);
+        @include transition-timing-function(ease);
+      }
+
+      &.collapsing,
+      &.in {
+        background-color: rgba(0, 0, 32, 0.25);
+        border: none;
+        margin: 0 -15px;
+
+        .navbar-nav {
+          background-color: $white;
+          border: none;
+          margin: 0 0 15px;
+          padding: 5px 0;
+          @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.3));
+
+          a {
+            border-bottom: solid 1px $brand-info;
+            color: $link-secondary-color;
+            font-size: 14px;
+            padding: 10px 15px;
+            white-space: nowrap;
+            @include transition-duration(0.2s);
+            @include transition-property(all);
+          }
+
+          .glyphicon {
+            color: rgba(0,0,64,0.35);
+            font-size: 116%;
+            margin: 0 8px 0 0;
+            vertical-align: text-bottom;
+          }
+        }
+      }
+    }
+  }
+}

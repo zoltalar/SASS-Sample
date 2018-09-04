@@ -1,0 +1,36 @@
+.activity-subscription-settings-title {
+  @extend .h5;
+  margin-top: $grid-gutter-width;
+}
+
+.ass-email-explain {
+  @extend .help-block;
+  margin: 0 0 0 25px !important;
+}
+
+#ass-email-subscriptions-options-page {
+
+  b {
+    @extend .help-block;
+    font-weight: normal;
+    margin-bottom: ($grid-gutter-width / 2);
+  }
+
+  input[type=radio] {
+    margin-right: 7px;
+  }
+
+  label {
+    margin: 0 0 5px;
+  }
+}
+
+.ass-email-type {
+  font-size: $font-size-base !important;
+  margin: 0 0 ($grid-gutter-width / 2);
+}
+
+.ass-sub-note {
+  @extend .help-block;
+  margin: $grid-gutter-width 0 0 !important;
+}

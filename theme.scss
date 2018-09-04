@@ -1,0 +1,354 @@
+// --------------------------------------------------
+// Includes
+// --------------------------------------------------
+
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans:400,600");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i");
+
+@import "theme/_variables.scss";
+
+@import "_bootstrap.scss";
+
+@import "theme/_mixins.scss";
+@import "theme/_keyframes.scss";
+@import "theme/_activity.scss";
+@import "theme/_article-series.scss";
+@import "theme/_author-box.scss";
+@import "theme/_avatar.scss";
+@import "theme/_chevron.scss";
+@import "theme/_commands.scss";
+@import "theme/_comments.scss";
+@import "theme/_covers.scss";
+@import "theme/_gallery.scss";
+@import "theme/_group.scss";
+@import "theme/_hacks.scss";
+@import "theme/_hot-topics.scss";
+@import "theme/_invite.scss";
+@import "theme/_message-thread.scss";
+@import "theme/_post.scss";
+@import "theme/_promo.scss";
+@import "theme/_search-bar.scss";
+@import "theme/_tags.scss";
+@import "theme/_topic.scss";
+
+@import "theme/plugins/_bp-group-email-subscription.scss";
+@import "theme/plugins/_jp-sharing.scss";
+@import "theme/plugins/_kk-like.scss";
+
+@import "theme/uploader/_annotations.scss";
+@import "theme/uploader/_cropper.scss";
+@import "theme/uploader/_edit-image.scss";
+@import "theme/uploader/_uploader.scss";
+
+@import "theme/bootstrap/_badges.scss";
+@import "theme/bootstrap/_button-groups.scss";
+@import "theme/bootstrap/_buttons.scss";
+@import "theme/bootstrap/_dropdowns.scss";
+@import "theme/bootstrap/_forms.scss";
+@import "theme/bootstrap/_navbar.scss";
+@import "theme/bootstrap/_navs.scss";
+@import "theme/bootstrap/_pagination.scss";
+@import "theme/bootstrap/_responsive-embed.scss";
+@import "theme/bootstrap/_scaffolding.scss";
+@import "theme/bootstrap/_tables.scss";
+@import "theme/bootstrap/_type.scss";
+@import "theme/bootstrap/_wells.scss";
+@import "theme/bootstrap/_utilities.scss";
+
+
+// --------------------------------------------------
+// Page Components
+// --------------------------------------------------
+
+.acfb-holder {
+
+  li {
+    margin: 0 10px 10px 0 !important;
+  }
+
+  .avatar {
+    @extend .avatar-xs;
+    margin-right: 5px;
+  }
+
+  .friend-tab {
+    background-color: #fafafa !important;
+    border-color: $brand-info !important;
+    border-radius: 0 !important;
+    padding: 5px 10px !important;
+
+    a {
+      color: $link-secondary-color;
+    }
+  }
+}
+
+.ac_results {
+  border-color: $brand-info !important;
+  border-radius: 0 !important;
+  min-width: 275px;
+
+  > ul {
+
+    > li {
+      padding: 10px;
+    }
+  }
+
+  .ac_odd {
+    background-color: $white;
+  }
+
+  .ac_over {
+    background-color: #fafafa;
+    color: inherit;
+  }
+
+  .avatar {
+    @extend .avatar-square, .avatar-xs;
+  }
+}
+
+#add-post {
+  float: left;
+  padding-left: ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 2);
+  width: 100%;
+}
+
+.ajax-loader {
+  background: url('../../assets/img/loader.gif') center center no-repeat;
+  display: none;
+  height: 16px;
+  vertical-align: middle;
+  width: 16px;
+}
+
+.animated {
+  animation: kenburns 90s infinite;
+}
+
+.avatar-nav-items {
+  border-bottom-color: #ddd !important;
+
+  li {
+
+    &.current {
+      border-color: #ddd !important;
+      border-bottom-color: $white !important;
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+
+      a {
+        font-weight: normal;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.avb {
+  float: left;
+  margin-left: -50px;
+}
+
+#aw-whats-new-submit {
+  min-width: 75px;
+}
+
+.content {
+  float: left;
+  padding-left: ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 2);
+  width: 100%;
+
+  body.activity.logged-in:not(.edit) &,
+  body.archive.author &,
+  body.archive.category &,
+  body.archive.tag &,
+  body.bp-user &,
+  body.groups.single-item:not(.error404) &,
+  body.my-account & {
+    margin-top: -40px;
+  }
+}
+
+#drag-drop-area {
+  border-color: #ddd;
+  border-width: 2px;
+
+  .bp-screen-reader-text {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: #f8f8f8;
+  color: #888;
+  font-size: 11px;
+  margin-top: 60px;
+  padding: $grid-gutter-width 0 10px;
+}
+
+.grayscale {
+  filter: grayscale(60%) blur(1px);
+}
+
+#group-create-body {
+
+  .main-column {
+    min-height: 120px;
+
+    .avatar {
+      float: left;
+      height: 120px;
+      margin-right: 20px;
+      width: 120px;
+      @extend .avatar-square;
+    }
+  }
+}
+
+.meta {
+  color: #aaa;
+  font-family: $font-droid-sans, $font-trebuchet-ms, sans-serif;
+  font-size: 11.5px;
+  line-height: 1.65;
+  margin-bottom: 5px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.modal-backdrop {
+  background-color: $white;
+
+  &.in {
+    opacity: 0.9;
+  }
+}
+
+#new-post {
+  margin-bottom: ($grid-gutter-width / 2);
+}
+
+div.notifications {
+  font-size: 12px;
+
+  > ul {
+    margin: 0;
+    @include list-unstyled;
+  }
+}
+
+.options {
+  float: right;
+  margin-left: 10px;
+  position: relative;
+}
+
+div.page {
+  margin-top: 40px;
+}
+
+.page-title {
+  font-size: 26px;
+  margin-bottom: $grid-gutter-width;
+  margin-top: 0;
+}
+
+.search-heading {
+  border-bottom: solid 1px $brand-info;
+  font-size: 26px;
+  margin: 0 0 5px;
+  padding-bottom: 5px;
+}
+
+.sidebar {
+  color: #aaa;
+  display: none;
+  float: left;
+  padding-left: ($grid-gutter-width / 2);
+  padding-right: 5%;
+
+  .not-logged-in {
+
+    .fa {
+      color: $brand-info;
+      font-size: 84px;
+    }
+  }
+}
+
+.standard-form {
+
+  .error {
+    background-color: $alert-warning-bg;
+    color: $alert-warning-text;
+    margin-bottom: ($grid-gutter-width / 2);
+    padding: 8px 12px;
+  }
+
+  .submit {
+
+    .btn {
+      margin-right: 5px;
+    }
+  }
+}
+
+#status-msg {
+  @extend .help-block;
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
+
+.tag-list {
+  margin-top: 20px;
+}
+
+.tag-list-item {
+  margin-bottom: 50px;
+
+  .heading {
+    border-bottom: solid 1px #eee;
+    font-weight: 600;
+    margin-bottom: ($grid-gutter-width / 2);
+    padding-bottom: ($grid-gutter-width / 2);
+
+    > a {
+      color: #444;
+
+      &:hover,
+      &:focus {
+        color: #00778f;
+      }
+    }
+  }
+}
+
+#topic-meta {
+
+  .headline {
+    border-bottom: solid 1px $brand-info;
+    line-height: 1.2;
+    margin: 30px 0 5px 0;
+    padding: 0 0 5px 0;
+  }
+
+  .links {
+    margin: $grid-gutter-width 0;
+  }
+}
+
+#whats-new-form {
+  background-color: #eaf5f6;
+  margin: 0 -15px 20px;
+  padding: 20px;
+}
+
+.wp-social-login-provider-list {
+  padding: 0;
+}

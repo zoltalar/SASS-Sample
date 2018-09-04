@@ -1,0 +1,71 @@
+.pagination {
+  margin: 0;
+
+  > li {
+
+    > a,
+    > span {
+      margin: 1px;
+      padding: 0 6px;
+      @include transition(all 0.2s);
+    }
+
+    &:first-child {
+
+      > a,
+      > span {
+        @include border-left-radius(3px);
+      }
+    }
+
+    &:last-child {
+
+      > a,
+      > span {
+        @include border-right-radius(3px);
+      }
+    }
+  }
+
+  .current {
+    background-color: $pagination-active-bg;
+    border-color: $pagination-active-border;
+    color: $pagination-active-color;
+    cursor: default;
+
+    &:hover,
+    &:focus {
+      background-color: $pagination-active-bg;
+      border-color: $pagination-active-border;
+      color: $pagination-active-color;
+      cursor: default;
+    }
+  }
+}
+
+.pagination-post-group {
+  font-size: 15px;
+
+  a {
+
+    &.previous,
+    &.next {
+      color: $text-color;
+      display: inline-block;
+      font-size: 16px;
+
+      &:visited {
+        color: $text-color;
+      }
+    }
+  }
+
+  .col-left {
+    margin-bottom: ($grid-gutter-width);
+    text-align: center;
+  }
+
+  .col-right {
+    text-align: center;
+  }
+}

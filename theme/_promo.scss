@@ -1,0 +1,149 @@
+.promo {
+  min-height: calc(66vh - 200px);
+  overflow: hidden;
+  padding: 50px 0 45px;
+  position: relative;
+
+  label {
+    margin: 0 0 5px;
+  }
+
+  .btn-facebook,
+  .btn-google {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 49%;
+  }
+
+  .btn-google {
+    float: right;
+  }
+
+  .btn-register {
+    margin-top: $grid-gutter-width;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .nav-tabs {
+    margin-top: 40px;
+
+    > li {
+      width: 50%;
+
+      > a {
+        background-color: rgba(230, 230, 230, 0.95);
+        border: none;
+        border-radius: 0;
+        color: $link-secondary-color;
+        font-family: $font-droid-sans, $font-trebuchet-ms, sans-serif;
+        height: 45px;
+        line-height: 45px;
+        margin-right: 0;
+        padding: 0 10px;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:hover
+        &:focus {
+          color: $link-secondary-color;
+        }
+      }
+
+      &.active {
+
+        > a {
+          background-color: rgba(255, 255, 255, 0.97);
+          border: none;
+        }
+      }
+    }
+  }
+
+  .social-media-login {
+    border-top: 1px solid $brand-info;
+    bottom: 30px;
+    left: 30px;
+    padding-top: ($grid-gutter-width / 2);
+    position: absolute;
+    right: 30px;
+  }
+
+  .tab-pane {
+    background-color: rgba(255, 255, 255, 0.97);
+    min-height: 380px;
+    padding: 20px 30px 30px;
+    position: relative;
+
+    p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+
+  .wp-social-login-connect-with {
+    display: none;
+  }
+}
+
+.promo-bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(70%) blur(3px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.promo-bg-overlay {
+  @extend .cover-bg-overlay;
+}
+
+.promo-bottom {
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.99);
+
+  a:not(.btn) {
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+
+    &:visited {
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+  }
+}
+
+.promo-intro {
+  color: $white;
+  font-size: 16px;
+  line-height: 1.45;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.99);
+
+  ul {
+    list-style-type: square;
+  }
+
+  .heading {
+    color: $white;
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+}

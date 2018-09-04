@@ -1,0 +1,30 @@
+.badge {
+  font-family: $font-droid-sans, $font-trebuchet-ms, sans-serif;
+  font-size: 11.5px;
+  padding: 3px 6px;
+  text-transform: uppercase;
+}
+
+.badge-danger {
+  background-color: $brand-danger;
+}
+
+.badge-friend {
+  background-color: rgb(121, 188, 219);
+}
+
+.badge-highlight {
+  background-color: rgb(255, 184, 79);
+}
+
+.badge-light {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.badge-member {
+  background-color: rgb(153, 197, 169);
+}
+
+.badge-muted {
+  background-color: #888;
+}

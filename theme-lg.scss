@@ -1,0 +1,29 @@
+// --------------------------------------------------
+// Includes
+// --------------------------------------------------
+
+@import "theme/_variables.scss";
+@import "bootstrap/_variables.scss";
+@import "bootstrap/_mixins.scss";
+
+@import "theme/uploader/_cropper-lg.scss";
+
+
+// --------------------------------------------------
+// Page Components
+// --------------------------------------------------
+
+#add-post {
+  padding-left: 45px;
+  width: 80.9%;
+}
+
+.content {
+  padding-left: 45px;
+  width: 80.9%;
+}
+
+.sidebar {
+  padding-right: ($grid-gutter-width / 2);
+  width: 19.1%;
+}

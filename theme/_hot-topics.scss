@@ -1,0 +1,29 @@
+.hot-topics {
+
+  > ul {
+    margin: 0;
+  }
+
+  .avatar {
+    border: solid 1px $brand-info;
+    border-radius: 0;
+    height: 16px;
+    margin-top: -1px;
+    width: 16px;
+  }
+
+  .heading {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0;
+  }
+
+  .meta {
+    margin-bottom: 0;
+  }
+
+  .topic-title {
+    font-size: 14px;
+    margin-left: 2px;
+  }
+}

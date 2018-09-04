@@ -1,0 +1,59 @@
+.search-bar {
+  border-bottom: 1px solid #ddd;
+  height: 54px;
+  text-overflow: ellipsis;
+
+  input[type=text] {
+    border: solid 1px $input-border-secondary;
+    border-bottom-left-radius: $input-border-radius;
+    border-top-left-radius: $input-border-radius;
+    border-right: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px 5px;
+    width: calc(100% - 135px);
+    @include placeholder($input-color-placeholder);
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .btn {
+    border-color: $input-border-secondary;
+    height: 30px;
+  }
+
+  .btn-dropdown {
+    padding: 0;
+    text-transform: none;
+    width: 90px;
+  }
+
+  .btn-group {
+    vertical-align: top;
+  }
+
+  .btn-submit {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding: 0;
+    position: absolute;
+    right: 100px;
+    width: 36px;
+  }
+
+  .input-group {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .options {
+    float: none;
+    height: 30px;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

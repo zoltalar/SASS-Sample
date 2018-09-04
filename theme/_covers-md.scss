@@ -1,0 +1,54 @@
+.cover {
+
+  &.cover-avatar {
+
+    .avatar {
+      height: 120px;
+      width: 120px;
+    }
+  }
+
+  &.cover-left {
+
+    &.cover-avatar {
+
+      .avatar {
+        left: 40px;
+      }
+
+      .cover-content {
+        padding-left: 185px;
+      }
+    }
+  }
+
+  &.cover-right {
+
+    &.cover-avatar {
+
+      .avatar {
+        right: 40px;
+      }
+
+      .cover-content {
+        padding-right: 185px;
+      }
+    }
+  }
+}
+
+.cover-content {
+  padding: 25px 40px;
+}
+
+.cover-info {
+  padding: 2px 40px;
+
+  &.cover-info-left {
+    padding-left: 185px;
+  }
+
+  &.cover-info-right {
+    padding-right: 185px;
+  }
+}

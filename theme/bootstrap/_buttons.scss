@@ -1,0 +1,178 @@
+.btn {
+  font-family: $font-droid-sans, $font-trebuchet-ms, sans-serif;
+  text-transform: uppercase;
+  @include transition(all 0.4s);
+
+  &:focus {
+    outline: none !important;
+  }
+
+  &:active,
+  &.active {
+    @include box-shadow(inset 1px 1px 4px rgba(0, 0, 0, 0.4));
+  }
+}
+
+.btn-danger {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+  @include ripple($btn-danger-color);
+
+  &:focus,
+  &:hover {
+    background-color: $btn-danger-hover-bg;
+    border-color: $btn-danger-border;
+  }
+
+  &:active,
+  &.active {
+    background-color: $btn-danger-hover-bg;
+    border-color: $btn-danger-border;
+
+    &:focus,
+    &:hover {
+      background-color: $btn-danger-hover-bg;
+      border-color: $btn-danger-border;
+    }
+  }
+}
+
+.btn-default {
+  @include ripple($btn-default-color);
+
+  &:focus,
+  &:hover {
+    background-color: $btn-default-hover-bg;
+    border-color: $btn-default-border;
+  }
+
+  &:active,
+  &.active {
+    background-color: $btn-default-hover-bg;
+    border-color: $btn-default-border;
+
+    &:focus,
+    &:hover {
+      background-color: $btn-default-hover-bg;
+      border-color: $btn-default-border;
+    }
+  }
+}
+
+.btn-facebook {
+  background-color: #3a5795;
+  color: $white;
+  @include ripple($white);
+
+  &:hover,
+  &:focus {
+    background-color: #2d4373;
+    color: $white;
+  }
+}
+
+.btn-google {
+  background-color: $btn-google-bg;
+  color: $white;
+  @include ripple($white);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-google-hover-bg;
+    color: $white;
+  }
+}
+
+.btn-link {
+  border-radius: $btn-border-radius-base;
+  color: $btn-link-color;
+  @include ripple($btn-link-color);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-link-hover-bg;
+    color: $btn-link-color;
+  }
+}
+
+.btn-pinterest {
+  background-color: $btn-pinterest-bg;
+  color: $white;
+  @include ripple($white);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-pinterest-hover-bg;
+    color: $white;
+  }
+}
+
+.btn-success {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+  @include ripple($btn-success-color);
+
+  &:focus,
+  &:hover {
+    background-color: $btn-success-hover-bg;
+    border-color: $btn-success-border;
+  }
+
+  &:active,
+  &.active {
+    background-color: $btn-success-hover-bg;
+    border-color: $btn-success-border;
+
+    &:focus,
+    &:hover {
+      background-color: $btn-success-hover-bg;
+      border-color: $btn-success-border;
+    }
+  }
+}
+
+.btn-twitter {
+  background-color: $btn-twitter-bg;
+  color: $white;
+  @include ripple($white);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-twitter-hover-bg;
+    color: $white;
+  }
+}
+
+.btn-default,
+.btn-link {
+
+  .fa,
+  .glyphicon {
+    color: $text-color;
+  }
+}
+
+.btn-lg {
+  border-radius: $btn-border-radius-base;
+  font-size: $font-size-base;
+}
+
+.btn-sm {
+  border-radius: $btn-border-radius-base;
+  font-size: $font-size-base;
+}
+
+.btn-xs {
+  border-radius: $btn-border-radius-base;
+  font-size: $font-size-base;
+}
+
+.buttons {
+  @include clearfix;
+
+  .btn {
+    float: left;
+
+    & + .btn {
+      margin-left: 4px;
+    }
+  }
+}

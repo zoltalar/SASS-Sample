@@ -1,0 +1,24 @@
+.kklike-box {
+  background-color: $btn-default-bg !important;
+  border-radius: $btn-border-radius-base !important;
+  color: $btn-default-color !important;
+  font-family: $font-family-base !important;
+  font-size: $font-size-base !important;
+  text-transform: uppercase;
+  @include transition(all 0.4s);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-default-hover-bg !important;
+  }
+}
+
+.kklike-ico {
+  background: url('../../assets/img/star.png') center right 2px no-repeat !important;
+  width: 26px !important;
+}
+
+.kklike-value {
+  border-left: none !important;
+  padding: 9px 10px 9px 0 !important;
+}

@@ -1,0 +1,51 @@
+#edit-image {
+
+  .next-image {
+    right: -8px;
+  }
+
+  .prev-image {
+    left: -8px;
+  }
+
+  .switch-image {
+    background: $white;
+    border: solid 2px #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 28px;
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 10px);
+    width: 30px;
+  }
+
+  &.first-image {
+
+    .prev-image {
+      display: none;
+    }
+  }
+
+  &.last-image {
+
+    .next-image {
+      display: none;
+    }
+  }
+
+  @media (max-width: $screen-xs) {
+
+    .modal-footer {
+
+      .btn {
+        font-size: 15px;
+
+        .text {
+          display: none;
+        }
+      }
+    }
+  }
+}

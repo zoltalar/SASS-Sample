@@ -1,0 +1,18 @@
+.sd-content {
+
+  > ul {
+    @include list-unstyled;
+
+    > li {
+      display: inline-block;
+
+      & + li {
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+.sharedaddy {
+  margin-top: 10px;
+}

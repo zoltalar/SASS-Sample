@@ -1,0 +1,46 @@
+// --------------------------------------------------
+// Includes
+// --------------------------------------------------
+
+@import "theme/_variables.scss";
+@import "bootstrap/_variables.scss";
+@import "bootstrap/_mixins.scss";
+
+@import "theme/_commands-sm.scss";
+@import "theme/_post-sm.scss";
+@import "theme/_promo-sm.scss";
+
+@import "theme/plugins/_jp-sharing-sm.scss";
+@import "theme/plugins/_kk-like-sm.scss";
+
+@import "theme/uploader/_cropper-sm.scss";
+@import "theme/uploader/_edit-image-sm.scss";
+
+@import "theme/bootstrap/_navbar-sm.scss";
+@import "theme/bootstrap/_pagination-sm.scss";
+
+
+// --------------------------------------------------
+// Page Components
+// --------------------------------------------------
+
+#add-post {
+  width: 75%;
+}
+
+.content {
+  width: 75%;
+}
+
+#new-post {
+  margin-bottom: 0;
+}
+
+.sidebar {
+  display: block;
+  width: 25%;
+}
+
+#whats-new-form {
+  margin: 0 0 20px;
+}

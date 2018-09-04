@@ -1,0 +1,35 @@
+.dropdown-menu {
+  border-radius: $dropdown-border-radius;
+  @include box-shadow(1px 1px 6px rgba(0, 0, 0, .175));
+
+  > li {
+
+    > a:not(.btn) {
+      color: $text-color;
+
+      &:hover,
+      &:focus {
+        color: $dropdown-link-hover-color;
+      }
+
+      &:visited {
+        color: $text-color;
+
+        &:hover,
+        &:focus {
+          color: $dropdown-link-hover-color;
+        }
+      }
+    }
+  }
+
+  .badge {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 2px;
+  }
+}
+
+.dropdown-menu-notifications,
+.dropdown-menu-tabs-primary {
+  min-width: 200px;
+}

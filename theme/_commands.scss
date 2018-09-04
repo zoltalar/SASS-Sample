@@ -1,0 +1,60 @@
+.command-group {
+  margin-bottom: ($grid-gutter-width / 2);
+}
+
+.command-group-compact {
+  margin-bottom: 8px;
+}
+
+.command-group-last {
+  margin-bottom: 0;
+}
+
+.command-pagination {
+  line-height: .9;
+}
+
+.command-separator-bottom {
+  border-bottom: solid 1px $brand-info;
+  padding-bottom: ($grid-gutter-width / 2);
+}
+
+.command-separator-top {
+  border-top: solid 1px $brand-info;
+  padding-top: ($grid-gutter-width / 2);
+}
+
+.commands {
+  margin-bottom: ($grid-gutter-width / 2);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.commands-article {
+  margin-bottom: $grid-gutter-width;
+}
+
+.commands-compact {
+  margin-bottom: 8px;
+}
+
+.commands-last {
+  margin-bottom: 0;
+}
+
+.commands-middle {
+  margin-top: $grid-gutter-width;
+}
+
+.commands-profile-edit {
+  margin-bottom: $grid-gutter-width;
+}

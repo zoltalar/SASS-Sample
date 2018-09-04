@@ -1,0 +1,20 @@
+.post {
+
+  .blog-listing & {
+
+    &.on-page-index-1:not(.loop-index-1),
+    &.on-page-index-2:not(.loop-index-2) {
+      padding-top: ($grid-gutter-width / 2);
+    }
+  }
+
+  .blog-single & {
+
+    .post-meta-data {
+
+      .tags {
+        text-align: right;
+      }
+    }
+  }
+}

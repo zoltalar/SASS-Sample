@@ -1,0 +1,16 @@
+a:not(.btn) {
+
+  &:visited {
+    color: $link-visited-color;
+
+    &:hover,
+    &:focus {
+      color: $link-visited-hover-color;
+    }
+  }
+}
+
+body {
+  min-width: 320px;
+  padding-top: 32px;
+}

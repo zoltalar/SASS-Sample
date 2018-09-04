@@ -1,0 +1,22 @@
+.article-series {
+  font-size: 15px;
+
+  a:not(.btn) {
+
+    &.active,
+    &.active:visited {
+      color: $text-color;
+    }
+  }
+
+  ol {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading {
+    font-size: 16px;
+    margin-top: 0;
+  }
+}

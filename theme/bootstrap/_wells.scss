@@ -1,0 +1,11 @@
+.well {
+  border-width: 2px;
+  margin-bottom: $grid-gutter-width;
+  padding: 20px;
+  @include box-shadow(none);
+}
+
+.well-lg {
+  padding-bottom: $grid-gutter-width;
+  padding-top: $grid-gutter-width;
+}

@@ -1,0 +1,6 @@
+.cropper-point {
+
+  &.point-se {
+    @include square(10px);
+  }
+}

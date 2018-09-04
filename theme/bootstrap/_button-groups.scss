@@ -1,0 +1,26 @@
+.btn-group.open .dropdown-toggle {
+  @include box-shadow(none);
+}
+
+.btn-group-loose {
+
+  .btn + .btn {
+    margin-left: 2px;
+  }
+}
+
+.btn-toolbar {
+
+  .btn {
+    border-color: #ddd;
+    color: #00778f;
+    padding: 0 6px;
+    text-transform: none;
+
+    &:hover,
+    &:focus {
+      background-color: #f4f4f4;
+      color: #00778f;
+    }
+  }
+}

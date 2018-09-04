@@ -1,0 +1,247 @@
+.annotation {
+  z-index: 2;
+
+  &.default {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: solid 2px rgba(255, 255, 255, 0.9);
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: auto !important;
+    margin: 10px;
+    position: absolute;
+    width: auto !important;
+
+    &.focus {
+      background: $white;
+      border: solid 2px #0050c7;
+      z-index: 100;
+    }
+  }
+}
+
+.annotations-as-text {
+  font-weight: normal;
+  font-size: 12px;
+  padding-top: 10px;
+  text-align: center;
+
+  ol {
+    background-color: #e7e7e7;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 2px 8px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery:not(.gallery-columns-1) & {
+    display: none;
+  }
+
+  #lightbox & {
+    border-top: solid 2px #ddd;
+    bottom: 50px;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  @media (min-width: 600px) {
+    display: none !important;
+  }
+}
+
+.annotation-canvas {
+  z-index: 10;
+
+  * {
+    box-sizing: content-box;
+  }
+
+  .canvas-svg {
+    height: 100%;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    line {
+      stroke: rgba(0, 0, 0, 0.4);
+      stroke-width: 2;
+      shape-rendering: auto;
+    }
+  }
+
+  #lightbox & {
+    z-index: 1050;
+
+    .annotations-as-text {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    &.edit-disabled {
+
+      .canvas-svg {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.annotation-edit {
+
+  .edit-enabled & {
+    clear: both;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    top: -1px;
+
+    .fa {
+      cursor: pointer;
+      padding-right: 5px;
+    }
+  }
+}
+
+.annotation-number {
+  font-weight: bold;
+}
+
+.annotation-point {
+  background-color: #f14c12;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: block;
+  height: 20px;
+  left: calc(50% - 11px);
+  position: absolute;
+  top: -12px;
+  width: 20px;
+  z-index: 101;
+
+  &:before {
+    color: $white;
+    font-weight: bold;
+    font-size: 14px;
+    height: 100%;
+    left: 0;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 0 2px $black;
+    top: 0;
+    width: 100%;
+  }
+
+  @for $i from 0 through 100 {
+
+    &:nth-child(#{$i}) {
+
+      &:before {
+        content: '#{$i}';
+      }
+    }
+  }
+
+  @media (min-width: 600px) {
+    height: 15px;
+    width: 15px;
+
+    &:before {
+      display: none;
+    }
+
+    &.snap-on {
+      display: none !important;
+    }
+  }
+}
+
+.annotation-text {
+  color: #444;
+  cursor: default;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+  height: auto;
+  line-height: 18px;
+  min-height: 16px;
+  min-width: 80px;
+  max-width: 200px;
+  overflow: hidden;
+  padding: 2px 22px 3px 6px;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  white-space: pre-line;
+  width: auto;
+  word-wrap: break-word;
+
+  * {
+    overflow: hidden;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: 320px) and (max-width: $screen-xs) {
+    min-height: 14px;
+    max-height: 60px;
+    font-size: 12px;
+  }
+}
+
+.bag {
+
+  &.annotations-bag {
+    overflow: hidden;
+    height: 0;
+  }
+
+  &.points-bag {
+    overflow: hidden;
+    height: 0;
+  }
+
+  @media (max-width: 600px) {
+
+    &.annotations-bag {
+
+      .edit-disabled & {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.marker {
+  color: $white;
+  cursor: pointer;
+  display: none;
+  font-size: 32px;
+  position: absolute;
+  right: 10px;
+  text-shadow: 0 0 3px $black;
+  top: 7px;
+  z-index: 1001;
+
+  .gallery &,
+  #lightbox & {
+    display: inline-block;
+  }
+
+  .gallery:not(.gallery-columns-1) & {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,7 @@
+.cropper-point {
+
+  &.point-se {
+    @include square(5px);
+    @include opacity(.75);
+  }
+}

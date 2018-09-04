@@ -1,0 +1,274 @@
+table#admins-list {
+
+  .cell-avatar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+table.forum {
+
+  .avatar {
+    border: solid 2px $white;
+    height: 32px;
+    left: 4px;
+    position: absolute;
+    top: 45%;
+    width: 32px;
+  }
+
+  .avatar-wrap {
+    display: block;
+    min-height: 55px;
+    position: relative;
+  }
+
+  .cell-avatar {
+    vertical-align: top;
+  }
+
+  .fa {
+    color: #ddd;
+    font-size: 44px;
+  }
+
+  .sticky {
+
+    > th,
+    > td {
+      background-color: $table-bg-active;
+    }
+  }
+}
+
+table#friend-list {
+
+  .cell-avatar {
+    padding-left: 0;
+    padding-right: 0;
+    vertical-align: top;
+  }
+}
+
+table#group-list,
+table#groups-list {
+
+  p {
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .cell-avatar {
+    padding-left: 0;
+    vertical-align: top;
+
+    .avatar {
+      height: 90px;
+      margin-top: 2px;
+      width: 90px;
+      @extend .avatar-square, .avatar-bordered;
+    }
+  }
+
+  .group-name {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+table#member-list,
+table#members-list {
+
+  p {
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .cell-avatar {
+    padding-left: 0;
+    padding-right: 0;
+    vertical-align: top;
+  }
+
+  .member-info {
+    line-height: 1.95;
+  }
+}
+
+table#message-threads {
+
+  .thread-from {
+    width: 25%;
+  }
+
+  .thread-info {
+    width: 55%;
+  }
+
+  .thread-notice {
+    width: 50%;
+  }
+
+  .unread {
+
+    > td {
+      background-color: $table-bg-active;
+    }
+  }
+}
+
+table#mods-list {
+
+  .cell-avatar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+table.notification-settings {
+
+  label {
+    display: none;
+  }
+
+  > thead,
+  > tbody,
+  > tfoot {
+
+    > tr {
+
+      > th,
+      > td {
+        padding-left: 0;
+        padding-right: 0;
+        vertical-align: middle;
+
+        &:first-child {
+          display: none;
+        }
+      }
+
+      &:last-of-type {
+
+        > th,
+        > td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .no,
+  .yes {
+    text-align: center;
+    width: 15%;
+  }
+}
+
+.table {
+  margin-bottom: ($grid-gutter-width / 2);
+
+  > thead,
+  > tbody,
+  > tfoot {
+
+    > tr {
+
+      > th,
+      > td {
+        line-height: 1.45;
+      }
+
+      &:last-of-type {
+
+        > th,
+        > td {
+          border-bottom: 1px solid $table-border-color;
+        }
+      }
+    }
+  }
+}
+
+.table-list {
+
+  .cell-avatar {
+    text-align: center;
+    vertical-align: middle;
+    width: 1%;
+  }
+
+  .cell-badge {
+    text-align: center;
+    vertical-align: middle;
+    width: 1%;
+  }
+
+  .cell-checkbox {
+    padding: 0 0 0 ($grid-gutter-width / 2);
+    text-align: center;
+    vertical-align: middle;
+    width: 1%;
+  }
+
+  .cell-chevron {
+    padding-left: 0;
+    padding-right: ($grid-gutter-width / 2);
+    vertical-align: middle;
+    width: 1%;
+  }
+
+  .cell-extended {
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+
+  .cell-icon-exclamation {
+    background-image: url('../../assets/img/exclamation-mark.png');
+    background-position: center top 15px;
+    background-repeat: no-repeat;
+    min-width: 50px;
+  }
+
+  .cell-middle {
+    vertical-align: middle;
+  }
+
+  .cell-primary {
+    font-size: 14px;
+  }
+
+  .cell-options {
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+.table-loose {
+
+  > thead,
+  > tbody,
+  > tfoot {
+
+    > tr {
+
+      > th,
+      > td {
+        padding: $table-loose-cell-padding;
+      }
+    }
+  }
+}
+
+.table-responsive {
+  border: none;
+}

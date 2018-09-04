@@ -1,0 +1,59 @@
+.invite {
+
+  .arrow {
+    color: #ddd;
+    font-size: 32px;
+    margin-top: 15px;
+    text-align: center;
+
+    .glyphicon {
+      @include rotate(90deg);
+    }
+  }
+
+  .heading {
+    font-weight: 600;
+    margin: 0 0 ($grid-gutter-width / 2);
+  }
+
+  .section {
+    margin: $grid-gutter-width 0 0;
+
+    &.section-last {
+      margin: 0;
+    }
+  }
+}
+
+.invite-list {
+  border: solid 2px $brand-info;
+  max-height: 171px;
+  min-height: 46px;
+  overflow-x: auto;
+
+  label {
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      border-bottom: solid 1px $brand-info;
+      min-height: 42px;
+      padding: 8px;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .avatar {
+    height: 25px;
+    margin-right: 5px;
+    width: 25px;
+  }
+}

@@ -1,0 +1,27 @@
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  font-family: $font-merriweather, Times, serif;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.list-inline {
+  margin: 0;
+
+  > li {
+    padding: 0;
+
+    & + li {
+
+      &:before {
+        content: '\b7\a0';
+      }
+    }
+  }
+}
+
+.text-default {
+  font-size: $font-size-base;
+}

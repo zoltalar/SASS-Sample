@@ -1,0 +1,134 @@
+.nav-tabs-primary {
+  margin-bottom: 0;
+  @include list-unstyled;
+  @include clearfix;
+
+  > li {
+    float: left;
+
+    & + li {
+      margin-left: -2px;
+    }
+
+    &.active,
+    &.current,
+    &.selected {
+
+      > .btn {
+        background-color: $brand-info;
+
+        .badge {
+          background-color: $white;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $btn-link-hover-bg;
+        }
+      }
+    }
+
+    &.first {
+
+      > .btn {
+        border-bottom-left-radius: 88px;
+        border-top-left-radius: 88px;
+        padding-left: 17px;
+      }
+    }
+
+    &.last,
+    &:last-of-type {
+
+      > .btn {
+        border-bottom-right-radius: 88px;
+        border-top-right-radius: 88px;
+        padding-right: 17px;
+      }
+    }
+
+    &.loading {
+
+      > .btn {
+        background-image: url('../../assets/img/loader.gif');
+        background-position: right 8px center;
+        background-repeat: no-repeat;
+        padding-right: 34px;
+      }
+    }
+  }
+
+  .btn {
+    border-color: $nav-tabs-primary-link-border;
+    border-width: 2px;
+    padding: 6px 12px;
+
+    .badge {
+      background-color: $brand-info;
+      color: $text-color;
+    }
+
+    &:hover,
+    &:focus {
+
+      .badge {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.nav-tabs-primary-sm {
+
+  .btn {
+    padding: 5px 10px;
+  }
+}
+
+.nav-tabs-secondary {
+  margin-bottom: ($grid-gutter-width / 2);
+
+  > li {
+
+    > a:not(.btn) {
+      border: none;
+      color: $text-color;
+      font-family: $font-droid-sans, $font-trebuchet-ms, sans-serif;
+      margin-right: 0;
+      text-transform: uppercase;
+      @include transition(all 0.2s);
+
+      &:focus,
+      &:hover {
+        background-color: transparent;
+        border-color: transparent;
+        color: #00778f;
+        @include box-shadow(inset 0 -2px 0 #00778f);
+      }
+
+      &:visited {
+        color: $text-color;
+
+        &:hover,
+        &:focus {
+          color: #00778f;
+        }
+      }
+    }
+
+    > span {
+      display: block;
+      padding: $nav-link-padding;
+      text-transform: uppercase;
+    }
+
+    &.current {
+
+      > a:not(.btn) {
+        color: #00778f;
+        border-color: transparent;
+        @include box-shadow(inset 0 -2px 0 #00778f);
+      }
+    }
+  }
+}

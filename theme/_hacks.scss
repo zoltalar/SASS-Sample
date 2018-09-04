@@ -1,0 +1,28 @@
+/**
+ * Some elements cannot be easily fixed neither from PHP nor JavaScript level.
+ * This file includes such elements. Please do not consider this file as optimized.
+ */
+
+#bp-avatar-feedback,
+#bp-cover-image-feedback {
+
+  &.success {
+    @extend .alert, .alert-success;
+  }
+}
+
+#message {
+  @extend .alert;
+
+  &.error {
+    @extend .alert-warning;
+  }
+
+  &.info {
+    @extend .alert-info;
+  }
+
+  &.updated {
+    @extend .alert-success;
+  }
+}

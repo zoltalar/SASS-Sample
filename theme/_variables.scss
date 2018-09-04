@@ -1,0 +1,129 @@
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// Brands
+$brand:                                   #69f !default;
+$brand-danger:                            #dd4b39 !default;
+$brand-info:                              #eee !default;
+$brand-success:                           #87bb9a !default;
+$brand-warning:                           #ad866a !default;
+
+// Scaffolding
+$link-color:                              #21759b !default;
+$link-hover-color:                        #288dbb !default;
+$link-hover-decoration:                   none !default;
+$link-secondary-color:                    #444 !default;
+$link-visited-color:                      #4ca6cf !default;
+$link-visited-hover-color:                #74bada !default;
+$text-color:                              #676767 !default;
+
+// Badges
+$badge-bg:                                rgba(0, 0, 0, 0.35) !default;
+$badge-font-weight:                       normal !default;
+$badge-line-height:                       12px !default;
+
+// Buttons
+$btn-border-color:                        transparent !default;
+$btn-border-radius-base:                  3px !default;
+$btn-danger-bg:                           $brand-danger !default;
+$btn-danger-hover-bg:                     #c53727 !default;
+$btn-danger-border:                       $btn-border-color !default;
+$btn-default-border:                      $btn-border-color !default;
+$btn-default-color:                       #444 !default;
+$btn-default-bg:                          #f6f6f6 !default;
+$btn-default-hover-bg:                    #e6e6e6 !default;
+$btn-google-bg:                           #dd4b39 !default;
+$btn-google-hover-bg:                     #9f191f !default;
+$btn-link-color:                          $btn-default-color !default;
+$btn-link-hover-bg:                       $btn-default-hover-bg !default;
+$btn-pinterest-bg:                        #cb2027 !default;
+$btn-pinterest-hover-bg:                  #9f191f !default;
+$btn-success-bg:                          $brand-success !default;
+$btn-success-hover-bg:                    #67a97e !default;
+$btn-success-border:                      $btn-border-color !default;
+$btn-twitter-bg:                          #08a0e9 !default;
+$btn-twitter-hover-bg:                    #0084b4 !default;
+
+// Colors
+$black:                                   #000;
+$white:                                   #fff;
+
+// Components
+$padding-base-vertical:                   5px !default;
+$padding-base-horizontal:                 16px !default;
+
+// Container sizes
+$container-large-desktop:                 1060px !default;
+
+// Dropdowns
+$dropdown-border-radius:                  3px !default;
+$dropdown-header-color:                   #bbb !default;
+$dropdown-link-hover-bg:                  $brand-info !default;
+
+// Alerts
+$alert-border-radius:                     0 !default;
+$alert-danger-bg:                         #e53d00 !default;
+$alert-danger-border:                     transparent !default;
+$alert-danger-text:                       $white !default;
+$alert-info-bg:                           $brand-info !default;
+$alert-info-border:                       transparent !default;
+$alert-info-text:                         $text-color !default;
+$alert-success-bg:                        $brand-success !default;
+$alert-success-border:                    transparent !default;
+$alert-success-text:                      $white !default;
+$alert-warning-bg:                        $brand-warning !default;
+$alert-warning-border:                    transparent !default;
+$alert-warning-text:                      $white !default;
+
+// Fonts
+$font-droid-sans:                         'Droid Sans';
+$font-helvetica-neue:                     'Helvetica Neue';
+$font-merriweather:                       'Merriweather';
+$font-open-sans:                          'Open Sans';
+$font-trebuchet-ms:                       'Trebuchet MS';
+
+// Forms
+$input-border:                            transparent !default;
+$input-border-focus:                      #f4f4f4 !default;
+$input-border-secondary:                  #ddd !default;
+$input-checkbox-border:                   #c8c8c8 !default;
+$input-checkbox-border-focus:             #b8b8b8 !default;
+$input-checkbox-border-disabled:          $brand-info !default;
+$input-color:                             $text-color !default;
+$input-color-placeholder:                 #ddd !default;
+$input-radio-border:                      #c8c8c8 !default;
+$input-radio-border-focus:                #b8b8b8 !default;
+$input-radio-border-disabled:             $brand-info !default;
+
+// Navbar
+$navbar-border-radius:                    0 !default;
+$navbar-fixed-link-color:                 rgba(255,255,255,0.8) !default;
+
+// Navs
+$nav-tabs-primary-link-border:            $brand-info !default;
+
+// Pagination
+$pagination-active-bg:                    #328ab2 !default;
+$pagination-active-border:                $pagination-active-bg !default;
+
+// Tables
+$table-border-color:                      $brand-info !default;
+$table-bg-hover:                          #f6f6f6 !default;
+$table-bg-active:                         $table-bg-hover !default;
+$table-loose-cell-padding:                15px !default;
+
+// Typography
+$font-family-base:                        $font-open-sans, $font-helvetica-neue, sans-serif !default;
+$font-size-base:                          13px !default;
+$font-size-h1:                            56px !default;
+$font-size-h2:                            35px !default;
+$font-size-h3:                            34px !default;
+$font-size-h4:                            24px !default;
+$font-size-h5:                            20px !default;
+$font-size-h6:                            14px !default;
+$line-height-base:                        1.846 !default;
+
+// Wells
+$well-bg:                                 #f8f8f8 !default;
+$well-border:                             $brand-info !default;

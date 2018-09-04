@@ -1,0 +1,156 @@
+// Radio (from Bootswatch Paper 3.3.7)
+input[type="radio"],
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
+  position: relative;
+  margin-top: 6px;
+  margin-right: 4px;
+  vertical-align: top;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    @include transition(240ms);
+  }
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: -3px;
+    background-color: $text-color;
+    @include scale(0);
+  }
+
+  &:after {
+    position: relative;
+    top: -3px;
+    border: 2px solid $input-radio-border;
+  }
+
+  &:checked:before {
+    @include scale(0.5);
+  }
+
+  &:disabled:checked:before {
+    background-color: $brand-info;
+  }
+
+  &:checked:after {
+    border-color: $input-radio-border;
+  }
+
+  &:disabled:after,
+  &:disabled:checked:after {
+    border-color: $brand-info;
+  }
+}
+
+// Checkbox (from Bootswatch Paper 3.3.7)
+input[type="checkbox"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: relative;
+  border: none;
+  margin-bottom: -4px;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus:after {
+    border-color: $input-checkbox-border-focus;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -2px;
+    margin-right: 5px;
+    border: 2px solid $input-checkbox-border;
+    border-radius: 2px;
+    @include transition(240ms);
+  }
+
+  &:checked:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 6px;
+    display: table;
+    width: 6px;
+    height: 12px;
+    border: 3px solid $text-color;
+    border-top-width: 0;
+    border-left-width: 0;
+    @include rotate(45deg);
+  }
+
+  &:checked:after {
+    background-color: $white;
+    border-color: $input-checkbox-border;
+  }
+
+  &:disabled:after {
+    border-color: $input-checkbox-border-disabled;
+  }
+
+  &:disabled:checked:after {
+    background-color: $white;
+    border-color: $input-checkbox-border-disabled;
+  }
+
+  &:disabled:checked:before {
+    border-color: $input-checkbox-border-disabled;
+  }
+}
+
+label {
+  color: #777;
+  font-family: $font-droid-sans, $font-trebuchet-ms, sans-serif;
+  font-weight: normal;
+  margin: ($grid-gutter-width / 2) ($grid-gutter-width / 2) 5px 0;
+}
+
+.form-control {
+  border-bottom-color: $input-border-secondary;
+  border-width: 2px;
+  font-size: 16px;
+  padding: 4px 5px;
+  @include box-shadow(none);
+  @include placeholder($input-color-placeholder);
+
+  &:focus {
+    border-bottom-color: #00778f;
+    @include box-shadow(none);
+  }
+}
+
+textarea.form-control {
+  border-color: $input-border-secondary;
+  resize: vertical;
+}
+
+.help-block {
+  color: #bfbfbf;
+  font-family: $font-droid-sans, $font-trebuchet-ms, sans-serif;
+  font-size: 11.5px;
+  line-height: 1.4;
+}

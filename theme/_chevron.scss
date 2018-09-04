@@ -1,0 +1,43 @@
+.chevron {
+
+  a {
+
+    &:before {
+      border-style: solid;
+      border-width: 3px 3px 0 0;
+      color: #ddd;
+      content: '';
+      display: inline-block;
+      height: 36px;
+      width: 36px;
+      @include rotate(-45deg);
+    }
+
+    &:hover {
+
+      &:before {
+        color: #bbb;
+      }
+    }
+  }
+
+  &.bottom {
+
+    a {
+
+      &:before {
+        @include rotate(135deg);
+      }
+    }
+  }
+
+  &.right {
+
+    a {
+
+      &:before {
+        @include rotate(45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,258 @@
+.cover {
+  height: 300px;
+  max-height: 33vh;
+  min-height: 200px;
+  position: relative;
+
+  &.cover-avatar {
+
+    .avatar {
+      height: 70px;
+      position: absolute;
+      top: 20px;
+      width: 70px;
+      @extend .avatar-bordered;
+    }
+  }
+
+  &.cover-bottom {
+
+    .cover-bg-overlay {
+      @include linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.45) 100%);
+    }
+
+    .cover-content {
+      bottom: 0;
+      top: auto;
+    }
+
+    &.cover-avatar {
+
+      .avatar {
+        bottom: -40px;
+        top: auto;
+      }
+    }
+  }
+
+  &.cover-empty {
+    border-color: #ddd;
+    border-style: dotted;
+    border-width: 0 2px 2px 2px;
+    height: auto;
+
+    .cover-bg {
+      display: none;
+    }
+
+    .cover-content {
+      color: #777;
+      text-shadow: none;
+    }
+  }
+
+  &.cover-left {
+
+    &.cover-avatar {
+
+      .avatar {
+        left: 25px;
+      }
+
+      .cover-content {
+        padding-left: 120px;
+      }
+    }
+  }
+
+  &.cover-right {
+
+    &.cover-avatar {
+
+      .avatar {
+        right: 25px;
+      }
+
+      .cover-content {
+        padding-right: 120px;
+      }
+    }
+  }
+
+  &.cover-small {
+    height: 25vh;
+    max-height: 240px;
+  }
+
+  &.cover-top {
+
+    .cover-bg-overlay {
+      @include linear-gradient(to top, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.45) 100%);
+    }
+
+    .cover-content {
+      padding-top: 41.5px;
+    }
+
+    &.cover-avatar {
+
+      .avatar {
+        bottom: auto;
+        top: -30px;
+      }
+    }
+  }
+
+  &.cover-user {
+
+    .avatar {
+      border-color: $white;
+      border-width: 4px;
+    }
+  }
+
+  // Exception
+  @media (max-width: $screen-xs-max) {
+
+    &.cover-stretch {
+      margin-left: -($grid-gutter-width / 2);
+      margin-right: -($grid-gutter-width / 2);
+
+      &.cover-empty {
+        border-width: 0 0 2px 0;
+      }
+    }
+  }
+}
+
+.cover-bg {
+  background: linear-gradient(#ddd 0%, #bbbbc0 100%);
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.cover-bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  @include translate(-50%,-50%);
+}
+
+.cover-bg-overlay {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  @include linear-gradient(to bottom, rgba(0, 0, 0, 0.22) 50%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+.cover-commands {
+
+  > div.generic-button {
+    display: inline-block;
+
+    & + div.generic-button {
+      margin-left: 4px;
+    }
+  }
+
+  .btn {
+    text-shadow: none;
+    @include box-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+  }
+}
+
+.cover-content {
+  color: $white;
+  left: 0;
+  max-height: 92%;
+  overflow: hidden;
+  padding: 25px;
+  position: absolute;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.99), 0 0 1px rgba(0, 0, 0, 0.75);
+  top: 0;
+  width: 100%;
+
+  a:not(.btn) {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+
+    &:visited {
+      color: inherit;
+
+      &:hover,
+      &:focus {
+        color: inherit;
+      }
+    }
+  }
+
+  .badge {
+    text-shadow: none;
+  }
+
+  .heading {
+    color: inherit;
+    margin-bottom: ($grid-gutter-width / 2);
+    margin-top: 0;
+
+    > small {
+      color: inherit;
+      padding-top: 7px;
+    }
+  }
+
+  // Exception
+  @media (max-width: $screen-sm-max) {
+
+    .heading {
+      font-size: 26px;
+    }
+  }
+}
+
+.cover-info {
+  line-height: 1.65;
+  margin: 5px 0 ($grid-gutter-width / 2);
+  padding: 2px 25px;
+
+  &.cover-info-avatar {
+    min-height: 35px;
+  }
+
+  &.cover-info-left {
+    padding-left: 120px;
+  }
+
+  &.cover-info-right {
+    padding-right: 120px;
+  }
+
+  // Exception
+  @media (max-width: $screen-xs-max) {
+
+    &.cover-info-stretch {
+      margin-left: -($grid-gutter-width / 2);
+      margin-right: -($grid-gutter-width / 2);
+    }
+  }
+}
+
+.cover-subheading {
+  font-size: 16.5px;
+  line-height: 21px;
+}

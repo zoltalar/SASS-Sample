@@ -1,0 +1,27 @@
+.group-info {
+  font-size: 15px;
+  margin: $grid-gutter-width 0 45px;
+
+  .heading {
+    margin-top: 0;
+  }
+}
+
+.group-stats {
+  @include list-unstyled;
+
+  > li {
+    border-bottom: solid 1px $brand-info;
+    display: block;
+    float: left;
+    overflow: hidden;
+    padding: 8px 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 50%;
+
+    &.attribute {
+      background: #fafafa;
+    }
+  }
+}

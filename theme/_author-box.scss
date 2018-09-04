@@ -1,0 +1,52 @@
+.author-avatar {
+  float: left;
+  margin: 4px 0 0 -55px;
+}
+
+.author-box {
+  display: block;
+
+  > ul {
+    @include list-unstyled;
+  }
+
+  .blog-single & {
+    margin-bottom: $line-height-computed;
+  }
+
+  .sidebar & {
+
+    .meta {
+      font-size: inherit;
+    }
+  }
+
+  .sidebar & {
+    position: relative;
+
+    .options {
+      float: none;
+      left: 8px;
+      margin-left: 0;
+      position: absolute;
+      top: 54px;
+    }
+  }
+}
+
+.author-box-avatar {
+  padding-left: 55px;
+}
+
+.author-name {
+  font-size: 14px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  .sidebar & {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+}

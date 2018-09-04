@@ -1,0 +1,26 @@
+.topic-content {
+  @extend .comment-entry;
+}
+
+.topic-item {
+  @extend .comment;
+}
+
+.topic-links {
+  @extend .comment-buttons;
+}
+
+.topic-list {
+  border-top: solid 1px $brand-info;
+  @include list-unstyled;
+}
+
+.topic-meta {
+
+  a {
+
+    &:first-of-type {
+      font-size: 14px;
+    }
+  }
+}

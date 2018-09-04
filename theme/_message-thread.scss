@@ -1,0 +1,33 @@
+.message-box {
+  @extend .comment;
+}
+
+.message-content {
+  @extend .comment-entry;
+}
+
+.message-metadata {
+
+  a {
+
+    &:first-of-type {
+      font-size: 14px;
+    }
+  }
+}
+
+.message-reply-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#message-thread {
+
+  .headline {
+    border-bottom: solid 1px $brand-info;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    padding: 0 0 5px 0;
+  }
+}
