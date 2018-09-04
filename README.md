@@ -44,5 +44,5 @@ add_action( 'wp_print_styles', 'mt_print_styles' );
 
 Things worth noticing:
 
-* Each major page component has it's own `.scss` file (e.g. `theme/_post-sm.scss`).
+* Each major page component (and it's breakpoint specific styles) has it's own `.scss` file (e.g. `theme/_post-sm.scss`).
 * All selectors and CSS properties are alphabetically ordered.
